@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+	<title>Tienda web</title>
+	 <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/indie.css">
+</head>
+
+<body>
+<section id="portada" class="portada background"> <!-- portada -->
+		<header id="header" class="header contenedor"><!-- header -->
+			<figure class="logotipo">
+			<img src="imagenes/invie.png" width="186" height="60" alt="Invie logotipo" /> <!-- logo -->
+			</figure>
+				<nav class="menu"> <!-- menu -->
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="#guitarras">Guitarras</a>
+						</li>
+						<li>
+							<a href="precios.html">Precios</a>
+						</li>
+			</nav>
+		</header>
+		<div class="contenedor">
+			<h1 class="titulo">Guitarras <span>invie</span>sibles</h1><!-- titulo -->
+			<h3 class="title-a">Sé una estrella de Rock</h3><!-- resumen -->
+			<a class="button" href="#guitarras">Conoce mas</a><!-- boton -->
+		</div>
+</section>
+
+<section id="guitarras" class="guitarras contenedor"> <!-- guitarras -->
+	<h2>Nuestras guitarras</h2><!-- titulo -->
+	<article class="guitarra"><!-- guitarra 1 -->
+		<img class="right" src="imagenes/invie-acustica.png" alt="Guitarra invie acustica" width="350" height="350">
+		<div class="contenedor-guitarra-a">
+			<h3 class="title-b">Invie acustica</h3>
+			<ol>
+				<li>Estilo vintage</li>
+				<li>Madera pura</li>
+				<li>Incluye estuche invisible</li>
+			</ol>
+		</div>
+	</article>	
+	<article class="guitarra b"><!-- guitarra 2 -->
+		<img class="left" src="imagenes/invie-classic.png" alt="Guitarra invie classic" width="250" height="250">
+		<div class="contenedor-guitarra-b">
+			<h3 class="title-b">Invie classic</h3>
+			<ol>
+				<li>Estilo vintage</li>
+				<li>Liviana</li>
+				<li>Inicia como rockstar</li>
+			</ol>
+		</div>
+	</article>
+</section>
+<footer class="footer"> <!-- footer -->
+	<div class="contenedor">
+		<div class="contacto">
+			<img src="imagenes/invie-white.png" alt="logotipo blanco">
+			<a href="tel:+573333333"><strong>telefono</strong><span>57 444 8989</span></a>
+			<a href="mailto:contacto@invie.co"><strong>E-mail</strong><span>Contacto</span></a>
+		</div>
+		<form class="formulario">
+			<div class="col1">
+				<label for="nombre">Nombre</label>
+				<input type="text" required id="nombre" />
+				<label for="email">E-mail</label>
+				<input type="email" required id="email">
+				<div class="sexo">
+					<label for="mujer">
+						<input type="radio" id="mujer" name="sexo" value="mujer"> Mujer
+					</label>
+					<label for="hombre">
+						<input type="radio" id="hombre" checked name="sexo" value="hombre"> Hombre
+					</label>
+				</div>
+				<div class="intereses">
+				<label for="cotizacion">
+					<input type="checkbox" id="cotizacion" checked name="intereses" value="cotizacion"> Cotización
+				</label>
+				<label for="reclamos">
+					<input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
+				</label>
+				<label for="otros">
+					<input type="checkbox" id="otros" name="intereses" value="otros"> Otros
+				</label>
+			    </div>
+			</div>    
+			<div class="col2">
+				<label for="comentarios"> Comentarios </label>
+				<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+				<input type="submit" value="Enviar" class="button" />				
+			</div>
+		</form>
+	</div>
+</footer>
+</body>
+</html>
